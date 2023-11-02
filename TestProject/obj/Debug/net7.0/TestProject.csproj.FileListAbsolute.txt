@@ -12,3 +12,17 @@ C:\Users\gcdem\Documents\GitHub\Csharp-Projects\TestProject\obj\Debug\net7.0\ref
 C:\Users\gcdem\Documents\GitHub\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.pdb
 C:\Users\gcdem\Documents\GitHub\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.genruntimeconfig.cache
 C:\Users\gcdem\Documents\GitHub\Csharp-Projects\TestProject\obj\Debug\net7.0\ref\TestProject.dll
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\bin\Debug\net7.0\TestProject.exe
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\bin\Debug\net7.0\TestProject.deps.json
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\bin\Debug\net7.0\TestProject.runtimeconfig.json
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\bin\Debug\net7.0\TestProject.dll
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\bin\Debug\net7.0\TestProject.pdb
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfo.cs
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.dll
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\refint\TestProject.dll
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.pdb
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\TestProject.genruntimeconfig.cache
+C:\Users\demelg\OneDrive\OneDrive - DBM Vircon\03 Git\Csharp-Projects\TestProject\obj\Debug\net7.0\ref\TestProject.dll
