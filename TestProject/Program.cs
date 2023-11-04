@@ -1,12 +1,25 @@
-﻿int[] inventory = { 200, 450, 700, 175, 250 };
-int sum = 0;
-int bin = 0;
+﻿string inputPhrase = "The quick brown fox jumps over the lazy dog.";
 
-foreach (int items in inventory)
-{
-    sum += items;
-    bin ++;
-    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
-}
+// convert the message into a char array
+char[] inputPhraseCharacters = inputPhrase.ToCharArray();
 
-Console.WriteLine($"\n\nThe sum of items is {sum}");
+// Reverse the chars
+Array.Reverse(inputPhraseCharacters);
+
+int countOfCharacterO = 0;
+
+// count the o's
+foreach (char character in inputPhraseCharacters)
+    {
+        if (character == 'o')
+        {
+            countOfCharacterO++;
+        }
+    }
+
+// convert it back to a string
+string inputPhraseReversed = new String(inputPhraseCharacters);
+
+// print it out
+Console.WriteLine(inputPhraseReversed);
+Console.WriteLine($"'o' appears {countOfCharacterO} times.");
