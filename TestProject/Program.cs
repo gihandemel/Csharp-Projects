@@ -1,24 +1,23 @@
-﻿string permission = "Manager";
-int level = 10;
+﻿Console.WriteLine("Please enter an integer value between 5 and 10:");
+string? userInput;
+int numericValue = 0;
+bool validInput = false;
 
-if (permission.Contains("Admin"))
-{
-    if (level >= 55)
-    {
-        Console.WriteLine("Welcome, Super Admin user.");
-    }
-    else
-    {
-        Console.WriteLine("Welcome, Admin user.");
-    }
-}
 
-else if (permission.Contains("Manager") && level >= 20)
-{
-    Console.WriteLine("Contact an Admin for access.");
-}
+do {
+    userInput = Console.ReadLine();
+    validInput = int.TryParse(userInput, out numericValue);
 
-else
-{
-    Console.WriteLine("You do not have sufficient privileges.");
-}
+        if ((validInput == true) && (numericValue > 5) && (numericValue < 10))
+        {
+            Console.WriteLine($"Your input value({userInput}) has been accepted.");
+        }
+
+        else
+        {
+            Console.WriteLine("Sorry, you entered an invalid number, please try again");
+            validInput = false;
+        }
+
+} while (validInput == false);
+
