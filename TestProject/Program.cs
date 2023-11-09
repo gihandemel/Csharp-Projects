@@ -1,23 +1,21 @@
-﻿Console.WriteLine("Please enter an integer value between 5 and 10:");
-string? userInput;
-int numericValue = 0;
-bool validInput = false;
+﻿string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int periodLocation = 0;
 
 
-do {
-    userInput = Console.ReadLine();
-    validInput = int.TryParse(userInput, out numericValue);
+for (int i = 0; i < myStrings.Length; i++)
+{
+    string myString = myStrings[i];
+    periodLocation = myString.IndexOf(".");
 
-        if ((validInput == true) && (numericValue > 5) && (numericValue < 10))
-        {
-            Console.WriteLine($"Your input value({userInput}) has been accepted.");
-        }
+    while (periodLocation > 0)
+    {
+        Console.WriteLine(myString.Substring(0,periodLocation));
 
-        else
-        {
-            Console.WriteLine("Sorry, you entered an invalid number, please try again");
-            validInput = false;
-        }
+        myString = myString.Remove(0,periodLocation+1).TrimStart();
 
-} while (validInput == false);
+        periodLocation = myString.IndexOf(".");
+    }
 
+    Console.WriteLine(myString);
+    
+}
