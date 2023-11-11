@@ -1,24 +1,9 @@
-﻿string permission = "Manager";
-int level = 10;
-
-if (permission.Contains("Admin"))
+﻿for (int currentNumber = 1; currentNumber <= 100; currentNumber ++)
 {
-    if (level >= 55)
-    {
-        Console.WriteLine("Welcome, Super Admin user.");
-    }
-    else
-    {
-        Console.WriteLine("Welcome, Admin user.");
-    }
-}
-
-else if (permission.Contains("Manager") && level >= 20)
-{
-    Console.WriteLine("Contact an Admin for access.");
-}
-
-else
-{
-    Console.WriteLine("You do not have sufficient privileges.");
+    Console.Write($"{currentNumber} ");
+    if (currentNumber % 3 == 0)
+        Console.Write("Fizz");
+    if (currentNumber % 5 == 0)
+        Console.Write("Buzz");
+    Console.Write("\n");
 }
