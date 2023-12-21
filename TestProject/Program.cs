@@ -1,9 +1,16 @@
-﻿for (int currentNumber = 1; currentNumber <= 100; currentNumber ++)
+﻿string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+string[] orders = orderStream.Split(',');
+Array.Sort(orders);
+
+foreach (string order in orders)
 {
-    Console.Write($"{currentNumber} ");
-    if (currentNumber % 3 == 0)
-        Console.Write("Fizz");
-    if (currentNumber % 5 == 0)
-        Console.Write("Buzz");
-    Console.Write("\n");
+    if (order.Length == 4)
+    {
+        Console.WriteLine(order);
+    }
+    else
+    {
+        Console.WriteLine($"{order}\t- Error");
+    }
 }
