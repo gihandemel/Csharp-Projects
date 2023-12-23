@@ -1,27 +1,43 @@
-﻿const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+﻿using System;
 
-string quantity = "";
-string output = "";
+string[] pettingZoo = 
+{
+    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
+    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
+    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
+};
 
-// Your work here
-const string openSpan = "<span>";
-const string closeSpan = "</span>";
+RandomizeAnimals();
+string[,] group = AssignGroup();
+Console.WriteLine("School A");
+// PrintGroup(group);
 
-int openingPosition = input.IndexOf(openSpan);
-int closingPosition = input.IndexOf(closeSpan);
+void RandomizeAnimals() 
+{
+    Random random = new Random();
 
-openingPosition += openSpan.Length;
+    for (int i = 0; i < pettingZoo.Length; i++) 
+    {
+        int r = random.Next(i, pettingZoo.Length);
 
-int length = closingPosition - openingPosition;
+        string temp = pettingZoo[r];
+        pettingZoo[r] = pettingZoo[i];
+        pettingZoo[i] = temp;
+    }
+}
 
-quantity = input.Substring(openingPosition, length);
+string[,] AssignGroup(int groups = 6) 
+{
+    string[,] result = new string[groups, pettingZoo.Length/groups];
+    int start = 0;
 
-output = input.Remove(0,5);
-output = output.Replace("</div>","");
-output = output.Replace("trade","reg");
+    for (int i = 0; i < groups; i++) 
+    {
+        for (int j = 0; j < result.GetLength(1); j++) 
+        {
+            result[i,j] = pettingZoo[start++];
+        }
+    }
 
-
-//
-
-Console.WriteLine($"Quantity: {quantity}");
-Console.WriteLine($"Output: {output}");
+    return result;
+}
